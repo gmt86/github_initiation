@@ -1,0 +1,49 @@
+Remaque: Si l'autocomplétion Boostrap ne donne pas sur VS2022 :
+Dans Vs2022-->Outils -->Options -->Editeur de Texte -->HTML -->Avancé -->Razor (mettre à True l'option Utiliser Razor Hérite pour APS.Net Core) puis redémarrer Vs2022
+
+
+mkdir : pour créer un dosier
+cd : pour acceder au dosier
+ls -a : pour afficher tous les éléments du dosier ainsi que ceux qui sont cachés
+git init : pour initialiser le dosier comme un dosier git
+git status : pour voir l'historique des modifications
+git log : pour voir les branches créer
+git add NomDuFichier.Extention : pour ajouter un nouveau fichier ou ses modification
+git add . : pour ajout les modifications apportées sur toutes les fichiers
+git add --all pour faire les ajouts, modification et suppression des différents fichiers (nouveau, modifier, supprimer..)
+git commit -m "": enrgistre une version du code Nb: un commit doit avoir un Nom et le message pour indique se qui a été fait
+git log --oneline affiche une ligne en masquant le détails
+git log --oneline -n*5  affiche les 5 premieres lignes en masquant le détails
+git commit -a -m "": pour initialiser une nouvelle version puis ajouter les fichier qui ont été modifier
+git diff : affiche les modifications ou ajouts qui ont été faites avant le dernier commit
+git checkout : voyager dans le temps pour observer (c.a.d : revenir en arrière pour vérifier...)
+git revert : prendre l'état des fichiers à une date et de restaurer au présent (inverse) 
+             (inverser un commit dans le présent sans toucher toutes les modifications qui ont été apporté après lui)
+git reset : contient trois options :
+             --soft : supprimer l'historique sans supprimer les modifications (etat: staged : les fichiers vont appareître en vert)
+	     --mixed :supprimer l'historique sans supprimer les modifications (etat: not staged : les fichiers vont appareître en rouge)
+	     --hard : supprimer l'historique et supprimer les modifications (etat: commited)
+git restore :
+
+git checkout master : pour revenir à la branche master  ensuite
+git log --oneline : pour retrouver les fichiers actuels
+
+
+
+…or create a new repository on the command line
+echo "# github_initiation" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gmt86/github_initiation.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/gmt86/github_initiation.git
+git branch -M main
+git push -u origin main
+
+
+
+
